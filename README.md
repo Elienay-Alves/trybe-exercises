@@ -15,7 +15,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [X] 1-3: _Unix & Bash - Part 1_
 - [X] 1-4: _Unix & Bash - Part 2_
 
-##### [Bloco 2: Git, GitHub e Internet]()
+##### [Bloco 2: Git, GitHub e Internet](https://github.com/Elienay-Alves/trybe-exercicios/tree/master/m01_fundamentos/b02_git-github-e-internet)
 
 - [X] 2-1: _Git & GitHub - O que é e para que serve?_
 - [X] 2-2: _Git & GitHub - Entendendo os comandos_
