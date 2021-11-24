@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: rgb(75, 141, 10);
+}
+
+li:active {
+    color: cornsilk;
+}
+
+ol,ul {
+    list-style: none;
+}
