@@ -60,3 +60,5 @@ if (angulosSaoPositivos) {
 } else {
   console.log ('Valores Invalidos');
 }
+
+// Terminar todos os desafios
