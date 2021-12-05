@@ -6,8 +6,8 @@ let quennRowPosition = 6;
 let quennColumnPosition = 4;
 
 // Posilçao do oponente
-let opponentRowPosition = 2;
-let opponentColumnPosition = 4;
+let opponentRowPosition = 4;
+let opponentColumnPosition = 2;
 
 // Armazena se o ataque foi bem sucedido
 let canAttack = false;
@@ -35,7 +35,21 @@ for (let iSupDir = 1; iSupDir < 8; iSupDir += 1) {
     break;
   }
 
-  // console.log(currentQueenRow, currentQueenColumn);
 }
 
-console.log ('Pode atacar?', canAttack);
+// Diagonal Inferior Esquerda
+for (let iInfEsq = 1; iInfEsq < 8; iInfEsq += 1) {
+  let currentQueenRow = quennRowPosition - iInfEsq;
+  let currentQueenColumn = quennColumnPosition - iInfEsq;
+  
+  // Se a linha for < 1 OU a coluna for < 1 eu tenho que parar o loop
+  if (currentQueenRow < 1 || currentQueenColumn < 1) {
+    break;
+  }
+
+  if (currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition) {
+    canAttack = true;
+    console.log('Pode atacar na diagonal inferior esquerda');
+    break;
+  }
+}
