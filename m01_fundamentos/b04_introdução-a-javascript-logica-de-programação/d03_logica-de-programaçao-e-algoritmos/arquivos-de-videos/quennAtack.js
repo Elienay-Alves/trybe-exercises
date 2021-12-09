@@ -31,7 +31,7 @@ for (let iSupDir = 1; iSupDir < 8; iSupDir += 1) {
 
   if (currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition) {
     canAttack = true;
-    console.log ('Pode atacar na diagonal superior direita');
+    // console.log ('Pode atacar na diagonal superior direita');
     break;
   }
 
@@ -49,7 +49,7 @@ for (let iInfEsq = 1; iInfEsq < 8; iInfEsq += 1) {
 
   if (currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition) {
     canAttack = true;
-    console.log('Pode atacar na diagonal inferior esquerda');
+    // console.log('Pode atacar na diagonal inferior esquerda');
     break;
   }
 }
@@ -67,8 +67,25 @@ for (let iSupEsq = 1; iSupEsq < 8; iSupEsq += 1) {
 
   if (currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition) {
   canAttack = true;
-    console.log('Pode atacar na diagonal superior esquerda');
+    // console.log('Pode atacar na diagonal superior esquerda');
     break;
+  }
+}
+
+// Diagonal Inferior Direita
+for (let iInfDir = 1; iInfDir < 8; iInfDir += 1) {
+  let currentQueenRow = quennRowPosition - iInfDir;
+  let currentQueenColumn = quennColumnPosition + iInfDir;
+  
+  // Se a linha for < 1 OU a coluna for > 8 eu tenho que parar o loop
+  if (currentQueenRow < 1 || currentQueenColumn > 8) {
+    break;
+  }
+
+  if (currentQueenRow === opponentRowPosition && currentQueenColumn === opponentColumnPosition) {
+    canAttack = true;
+    console.log('Pode atacar na diagonal inferior direita');
+     break;
   }
 }
 
