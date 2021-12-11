@@ -11,3 +11,5 @@ console.log('O cantor ' + singer.name + ' ' + singer.lastName + ' possui ' + sin
 singer ['fullName'] = singer.name + ' ' + singer.lastName;
 
 console.table(singer);
+
+arroz e feijão
