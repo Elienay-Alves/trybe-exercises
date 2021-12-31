@@ -47,3 +47,17 @@ primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
 let terceiroFilho = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
 
 console.log(terceiroFilho)
+
+// Parte III
+// Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+let pai = document.getElementById('pai');
+for (let i = pai.childNodes.length -1; i >= 0; i -=1) {
+  currentChildren = pai.childNodes[i];
+  if (currentChildren.id !== 'elementoOndeVoceEsta') {
+    currentChildren.remove();
+  }
+}
+
+let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoFilhoDoFilho.remove();
