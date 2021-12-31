@@ -1,3 +1,4 @@
+// Temos um array com cada ingrediente da lista
 let ingredientItens = [
   '500g de feijão carioquinha cozido',
   '200g de toucinho',
@@ -10,9 +11,11 @@ let ingredientItens = [
   '200g de farinha de mandioca'
 ];
 
+// Recuperamos a classe da ul do nosso index pelo querySelector
 let ingredientList = document.querySelector('.ingredients-list');
 
-for (let i = 0; i < ingredientItens.length; i += 1) {
+// Fizemos um loop que vai varrer o array e por cada index  dentri da variavel ingredients. A partir dai criamos uma variavel 
+for (let i = 0; i < ingredientItens.length; i += 1) 
   let ingredient = ingredientItens[i];
 
   let ingredientListItem = document.createElement('li');
