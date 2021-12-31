@@ -15,11 +15,11 @@ let ingredientItens = [
 let ingredientList = document.querySelector('.ingredients-list');
 
 // Fizemos um loop que vai varrer o array e por cada index  dentri da variavel ingredients. A partir dai criamos uma variavel 
-for (let i = 0; i < ingredientItens.length; i += 1) 
+for (let i = 0; i < ingredientItens.length; i += 1) {
   let ingredient = ingredientItens[i];
 
   let ingredientListItem = document.createElement('li');
   ingredientListItem.innerText = ingredient;
 
   ingredientList.appendChild(ingredientListItem);
-}
+};
