@@ -14,7 +14,7 @@ let ingredientItens = [
 // Recuperamos a classe da ul do nosso index pelo querySelector
 let ingredientList = document.querySelector('.ingredients-list');
 
-// Fizemos um loop que vai varrer o array e por cada index  dentri da variavel ingredients. A partir dai criamos uma variavel 
+// Fizemos um loop que vai varrer o array e por cada index  dentro da variavel ingredients. A partir dai criamos uma variavel 
 for (let i = 0; i < ingredientItens.length; i += 1) {
   let ingredient = ingredientItens[i];
 
