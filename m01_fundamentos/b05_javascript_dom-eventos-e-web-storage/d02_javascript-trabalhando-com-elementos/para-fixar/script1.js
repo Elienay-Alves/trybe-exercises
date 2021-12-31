@@ -15,3 +15,4 @@ let atencao = elementoOndeVoceEsta.nextSibling;
 let thirdChild = elementoOndeVoceEsta.nextElementSibling;
 
 let terceiroFilho = pai.lastElementChild.previousElementSibling;
+

@@ -23,3 +23,21 @@ for (let i = 0; i < ingredientItens.length; i += 1) {
 
   ingredientList.appendChild(ingredientListItem);
 };
+
+// Parte II
+// 1. Crie um irmão para `elementoOndeVoceEsta`.
+
+let pai = document.getElementById('pai');
+let irmaoElementoOndeVoceEsta = document.createElement('section');
+
+irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+pai.appendChild(irmaoElementoOndeVoceEsta);
+
+// 2. Crie um filho para 'elementoOndeVoceEsta'.
+
+let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+
+let filhoElementoOndeVoceEsta = document.createElement('section');
+
+filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
