@@ -2,25 +2,24 @@
 let container = document.getElementById('first');
 console.log(container);
 
-// function createDivElement (classes) {
-//   let newDiv = document.createElement('div');
-//   newDiv.className = classes;
-//   container.appendChild(newDiv);
-// }
-
-// createDivElement('circle small red');
-
-// Eu fiz da forma acima e funcionou, porém o professor fez de outra forma. Como esta abaixo:
-
 function createDivElement (classes) {
   let newDiv = document.createElement('div');
   newDiv.className = classes;
   return newDiv
 }
 
-container.appendChild(createDivElement('circle small red'));
-container.appendChild(createDivElement('square small green'));
-container.appendChild(createDivElement('circle small yellow'));
+function addElementAsChild (local, elemento) {
+  local.appendChild(elemento);
+}
+
+let features = ['square small green', 'circle small yellow', 'square small red'];
+
+for (let feature of features) {
+  let element = createDivElement(feature)
+  addElementAsChild(container, element)
+}
+
+
 
 // Jeito velho de fazer:
 
