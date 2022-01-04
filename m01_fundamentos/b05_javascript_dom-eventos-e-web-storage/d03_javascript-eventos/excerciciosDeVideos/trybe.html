@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Trybe DOM</title>
+</head>
+<body>
+  <p id="trybe">
+    Olá, somos a Trybe e temos uma oferta imperdivel para você...
+  </p>
+
+  <button onclick="maisInfos();">Mais informações</button>
+
+  <p id="trybe-continua"></p>
+  <script>
+    window.onload = jsCarregado
+
+    function jsCarregado() {
+      alert('Pagina foi carregada!')
+    }
+
+    function maisInfos () {
+      let textoMaisInfo = document.getElementById('trybe-continua');
+      textoMaisInfo.innerText = 'Aqui você vai aprender Hard Skills, Soft Skills e várias outras habilidades!' 
+    }
+  </script>
+</body>
+</html>
