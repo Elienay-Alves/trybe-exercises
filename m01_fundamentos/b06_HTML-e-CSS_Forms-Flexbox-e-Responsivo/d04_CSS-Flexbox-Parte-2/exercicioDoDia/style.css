@@ -12,15 +12,19 @@ body {
 .header-container {
   background-color: #5C687C;
   display: flex;
+  /* flex-direction: row; */
+
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
+  flex-basis: 268px;
 }
 
 .menu-container {
   display: flex;
+  flex-basis: 500px;
 }
 
 .menu-container ul {
