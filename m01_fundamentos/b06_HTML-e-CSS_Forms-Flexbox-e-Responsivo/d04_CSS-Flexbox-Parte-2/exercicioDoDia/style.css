@@ -12,8 +12,6 @@ body {
 .header-container {
   background-color: #5C687C;
   display: flex;
-  /* flex-direction: row; */
-
 }
 
 .logo-container {
