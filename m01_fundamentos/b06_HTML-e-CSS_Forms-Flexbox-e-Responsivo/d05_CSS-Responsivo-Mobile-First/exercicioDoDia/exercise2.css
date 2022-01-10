@@ -29,3 +29,14 @@ p {
     line-height: 1.5em;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightgreen;
+    font-family: sans-serif;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+}
