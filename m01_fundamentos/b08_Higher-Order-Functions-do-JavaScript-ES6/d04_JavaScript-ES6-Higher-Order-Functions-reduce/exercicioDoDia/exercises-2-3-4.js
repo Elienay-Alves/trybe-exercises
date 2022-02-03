@@ -62,31 +62,13 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-// 1:
+// 2 - Crie uma string com os nomes de todas as pessoas autoras. 
+const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-const details = books.map((book) => `${book.name}, ${book.genre}, ${book.author.name}`);
+function reduceNames(array) {
+  return array.reduce((acc, cur) => {
+    acc.concat(cur.author.name)
+  }, '');
+}
 
-console.log(details);
-
-// 2
-const output = books.map((book) => {
- const authors = {};
-  authors.author = book.author.name;
-  authors.age = book.releaseYear - book.author.birthYear;
-
-return authors
-
-}).sort((a, b) => a.age - b.age);
-console.log(output);
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(reduceNames(books));
