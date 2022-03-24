@@ -10,24 +10,21 @@ class App extends Component {
       numeroDeCliques2: 0,
       numeroDeCliques3: 0,
     }
-    this.showMessage1 = this.showMessage1.bind(this);
-    this.showMessage2 = this.showMessage2.bind(this);
-    this.showMessage3 = this.showMessage3.bind(this);
   }
 
-  showMessage1() {
+  showMessage1 = () => {
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques1: estadoAnterior.numeroDeCliques1 + 1,
     }));
   }
   
-  showMessage2() {
+  showMessage2 = () => {
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques2: estadoAnterior.numeroDeCliques2 + 1,
     }));
   }
   
-  showMessage3() {
+  showMessage3 = () => {
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques3: estadoAnterior.numeroDeCliques3 + 1,
     }));
