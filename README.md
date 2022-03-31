@@ -24,7 +24,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 ##### Bloco 3: Introdução à HTML & CSS
 
 - [X] 3-1: _Introdução - HTML & CSS_
-- [X] 3-1: _HTML & CSS - Estruturas de página_
+- [X] 3-1: [HTML & CSS - Estruturas de página](https://elienay-alves.github.io./)
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
