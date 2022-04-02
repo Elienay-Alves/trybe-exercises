@@ -28,16 +28,6 @@
   color: #61dafb;
 }
 
-#containner {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-button {
-  margin: 10px
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -46,5 +36,3 @@ button {
     transform: rotate(360deg);
   }
 }
-
-
