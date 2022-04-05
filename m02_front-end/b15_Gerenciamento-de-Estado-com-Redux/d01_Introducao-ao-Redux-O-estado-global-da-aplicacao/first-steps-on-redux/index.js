@@ -2,8 +2,8 @@
 const Redux = require('redux');
 
 // ################### MONTANDO O REDUCER ############################
-const reducer = (state) => state;
+const reducer = (state = { login: false, email: '' }) => state;
 
 // ################### CRIAÇÃO DA STORE ##############################
-const store = Redux.createStore();
+const store = Redux.createStore(reducer);
 
