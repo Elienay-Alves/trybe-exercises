@@ -28,16 +28,28 @@ class Form extends Component {
       <div>
         <h1>Componente Controlado</h1>
         <form>
-          <Select value={this.state.value} handleChange={this.handleChange}/>
+          <Select 
+          value={this.state.value} 
+          handleChange={this.handleChange}/>
           <br />
           <br />
           <fieldset>
-            <input name="fullName" value={this.state.value} type="text" onChange={this.handleChange} />
+            <input 
+            name="fullName" 
+            value={this.state.value} 
+            type="text" 
+            onChange={this.handleChange} />
           </fieldset>
           <br />
           <br />
           <label>
-          <textarea name="aboutMe" id="" cols="30" rows="10" value={this.state.value} onChange={this.handleChange}>
+          <textarea 
+          name="aboutMe" 
+          id="" 
+          cols="30" 
+          rows="10" 
+          value={this.state.value} 
+          onChange={this.handleChange}>
           </textarea>
           </label>
           <br />
