@@ -2,9 +2,22 @@ version: '3'
 
 services:
   pao-com-ovo:
-    container_name: pao_com_ovo
     build: .
     environment:
       REACT_APP_NAME: "pão com ovo"
     ports:
       - 10000:3000
+    networks:
+      - cra
+
+  tudo-dois:
+    build: .
+    environment:
+      REACT_APP_NAME: "tudo dois"
+    ports:
+      - 10001:3000
+    networks:
+      - cra
+
+networks:
+  cra:
