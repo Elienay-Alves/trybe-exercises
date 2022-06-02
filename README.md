@@ -156,7 +156,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [X] 20-1: _Introdução - Banco de Dados Relacionais_
 - [X] 20-1: _Banco de Dados Dados SQL_
-- [ ] 20-2: _Encontrando dados em um Banco de Dados_
+- [X] 20-2: _Encontrando dados em um Banco de Dados_
 - [ ] 20-3: _Filtrando Dados de Forma Específica_
 - [ ] 20-4 _Manipulando Tabelas_
 - [ ] 20-4: _[Projeto - All for One]()_
