@@ -29,3 +29,10 @@ SELECT t.id, t.name, t.location, m.title, m.director, m.year, m.length_minutes
 FROM theater t
 RIGHT JOIN movies m ON t.id = m.theater_id
 ORDER BY t.name;
+
+-- BONUS:
+-- EXERCICIO 6:
+SELECT m.id, m.title, m.director, m.year, m.length_minutes, m.theater_id
+FROM movies m
+INNER JOIN box_office bo ON bo.movie_id = m.id
+WHERE bo.rating > 8 AND m.theater_id IS NOT NULL;
