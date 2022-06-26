@@ -164,9 +164,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 ##### Bloco 21: Normalização e Modelagem de banco de dados
 
 - [X] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _Aula ao vivo + [Projeto - One For All]()_
+- [X] 21-2: _Descomplicando JOINs_
+- [X] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [X] 21-4: _Aula ao vivo + [Projeto - One For All]()_
 
 ##### Bloco 22: Introdução à MongoDB
 
