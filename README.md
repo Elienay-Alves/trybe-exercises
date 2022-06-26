@@ -168,12 +168,15 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [X] 21-3: _Transformando ideias em um modelo de banco de dados_
 - [X] 21-4: _Aula ao vivo + [Projeto - One For All]()_
 
-##### Bloco 22: Introdução à MongoDB
+##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Introdução - NoSQL_
-- [ ] 22-1: _Introdução - MongoDB_
-- [ ] 22-2: _Filter Operators_
-- [ ] 22-3: _[Projeto - Data Flights]()_
+- [ ] 22-1: _Intro - Node.js_
+- [ ] 22-1: _Node.js - Um morot JavaScript_
+- [ ] 22-2: _Node.js - Fluxo Assíncrono_
+- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [ ] 22-4: _Express - HTTP com Node.js_
+- [ ] 22.5: _Express - Middlewares_
+- [ ] 22-6: _Atividades + [Projeto - Talker Manager]()_
 
 ##### Bloco 23: MongoDB: Updates Simples e Complexos
 
