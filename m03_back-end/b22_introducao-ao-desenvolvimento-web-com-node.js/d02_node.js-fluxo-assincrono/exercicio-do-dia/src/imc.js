@@ -14,11 +14,27 @@ const calculaImc = (p, a) => {
   const imc = (p / alturaQuadrado);
 
   return imc
+
+  
 };
 
 const main = () => {
   const imc = calculaImc(peso, altura);
   console.log(`IMC: ${imc.toFixed(2)}`);
+
+  if(imc < 18.5) {
+    console.log('Abaixo do peso (magresa)');
+  } if (imc >= 18.5 && imc <= 24.9) {
+    console.log('Peso normal');
+  } if (imc >= 25.0 && imc <= 29.9){
+    console.log('Acima do peso (sobrepeso)')
+  } if (imc >= 30 && imc <= 34.9) {
+    console.log('Obesidade grau I');
+  } if (imc >= 35 && imc <= 39.9) {
+    console.log('Obesidade grau II');
+  } if (imc >= 40) {
+    console.log('Obesidade graus III e IV');
+  }
 }
 
 main();
