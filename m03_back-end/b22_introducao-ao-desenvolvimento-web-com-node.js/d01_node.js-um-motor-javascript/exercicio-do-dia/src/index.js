@@ -1,10 +1,6 @@
 const { questionInt } = require('readline-sync');
+const { scripts } = require('./data/scripts');
 
-const scripts = [
-  {name: 'Calcular IMC', path: './imc.js'},
-  {name: 'Calcular Velocidade Média', path: './velocidade.js'},
-  {name: 'Jogo de adivinhação', path: './sorteio.js'},
-];
 
 const escolherScript = () => {
   const enunciado = 'Escolha um número para executar o script correspondente\n';
