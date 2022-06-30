@@ -170,8 +170,8 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Intro - Node.js_
-- [ ] 22-1: _Node.js - Um morot JavaScript_
+- [X] 22-1: _Intro - Node.js_
+- [X] 22-1: _Node.js - Um morot JavaScript_
 - [ ] 22-2: _Node.js - Fluxo Assíncrono_
 - [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
 - [ ] 22-4: _Express - HTTP com Node.js_
