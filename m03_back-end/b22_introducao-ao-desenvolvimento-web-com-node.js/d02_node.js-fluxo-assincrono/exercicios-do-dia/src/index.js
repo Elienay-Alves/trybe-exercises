@@ -20,13 +20,16 @@ const mathQuestion = (a, b, c) => {
 //   .then(console.log)
 //   .catch(err => console.error(err.message));
 
-const randomParameter = () => {
+const randomParameter = async () => {
   const random = Math.floor(Math.random() * 100 + 1);
-  const funct = mathQuestion(random, random, random);
 
-  return funct;
+  try {
+    const funct = await mathQuestion(random, random, random);
+    console.log(funct);
+  } catch (err) {
+    console.error(err.message);
+  }
+
 }
 
-randomParameter()
-  .then(console.log)
-  .catch(err => console.error(err.message))
+randomParameter();
