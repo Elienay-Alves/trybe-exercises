@@ -1,6 +1,6 @@
 const connection = require('./connection');
 
-const readAll = async () => {
+const getAll = async () => {
   const [result] = await connection.execute(
     'SELECT id, title, author_id FROM books;',
   );
@@ -8,6 +8,16 @@ const readAll = async () => {
   return result;
 };
 
+const getByAuthorId = async (id) => {
+  const query = `SELECT * FROM books
+  WHERE author_id=?`
+
+  const [result] = await connection.execute( query, [id]);
+
+  return result;
+}
+
 module.exports = {
-  readAll,
+  getAll,
+  getByAuthorId,
 }
