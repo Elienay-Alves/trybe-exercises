@@ -1,7 +1,11 @@
 const connection = require("./connection");
 
+// Cria uma string com o nome completo do author
 const readNewAuthor = ({ id, firstName, middleName, lastName }) => {
-  const fullName = [firstName, middleName, lastName].filter((name) => name).join(' ');
+
+  // Boolean é uma função que recebe um parâmetro e retorna true ou false,
+  // nesse caso só vai trazer os parametros que forem true
+  const fullName = [firstName, middleName, lastName].filter(Boolean).join(' ');
 
   return {
     id,
@@ -12,6 +16,7 @@ const readNewAuthor = ({ id, firstName, middleName, lastName }) => {
   }
 }
 
+// Converte o nome dos campos de snake_case para camelCase
 const serialize = (authorData) => {
   return {
     id: authorData.id,
@@ -21,8 +26,11 @@ const serialize = (authorData) => {
   }
 }
 
+// Busca todos os autores do banco
 const readAll = async () => {
-  const [result] = await connection.execute('SELECT id, first_name, middle_name, last_name FROM authors');
+  const [result] = await connection.execute(
+    'SELECT id, first_name, middle_name, last_name FROM authors;',
+  );
 
   return result.map(serialize).map(readNewAuthor);
 } 
