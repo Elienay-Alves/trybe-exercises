@@ -1,23 +1,46 @@
 const connection = require('./connection');
 
 const getAll = async () => {
-  const [result] = await connection.execute(
-    'SELECT id, title, author_id FROM books;',
-  );
+  const query = 'SELECT * FROM books;'
+  const [result] = await connection.execute(query);
 
-  return result;
+  return result.map(({ id, title, author_id}) => ({
+    id,
+    title,
+    authorId: author_id,
+  }));
 };
 
-const getByAuthorId = async (id) => {
+const getById = async (id) => {
   const query = `SELECT * FROM books
-  WHERE author_id=?`
+  WHERE id=?;`
 
-  const [result] = await connection.execute( query, [id]);
+  const [result] = await connection.execute(query, [id]);
 
-  return result;
+  if (result.length === 0) return null;
+
+  return result.map(({ id, title, author_id }) => ({
+    id,
+    title,
+    authorId: author_id,
+  }))
 }
+
+const getByAuthorId = async (authorId) => {
+  const query = `SELECT * FROM books
+  WHERE author_id=?;`
+
+  const [result] = await connection.execute( query, [authorId]);
+
+  return result.map(({ id, title, author_id}) => ({
+    id,
+    title,
+    authorId: author_id,
+  }));
+};
 
 module.exports = {
   getAll,
   getByAuthorId,
+  getById,
 }
