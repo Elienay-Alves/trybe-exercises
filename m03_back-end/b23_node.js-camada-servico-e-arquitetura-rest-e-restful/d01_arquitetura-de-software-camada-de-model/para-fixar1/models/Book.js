@@ -1,4 +1,5 @@
 const connection = require('./connection');
+const Author = require('')
 
 const getAll = async () => {
   const query = 'SELECT * FROM books;'
@@ -38,6 +39,14 @@ const getByAuthorId = async (authorId) => {
     authorId: author_id,
   }));
 };
+
+// const async isValid = (title, author_id, lastName) => {
+//   if (!title || typeof title !== 'string' || title.length > 3) return false;
+//   if (!author_id || typeof author_id !== 'number' || !(await Author.find)) return false;
+//   if (!lastName || typeof lastName !== 'string') return false;
+
+//   return true;
+// }
 
 module.exports = {
   getAll,

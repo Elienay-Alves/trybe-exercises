@@ -52,7 +52,24 @@ const readId = async (id) => {
   });
 }
 
+const isValid = (firstName, middleName, lastName) => {
+  if (!firstName || typeof firstName !== 'string') return false;
+  if (middleName && typeof middleName !== 'string') return false;
+  if (!lastName || typeof lastName !== 'string') return false;
+
+  return true;
+}
+
+const create = async (firstName, middleName, lastName) => {
+  const query = `INSERT INTO model_example.authors (first_name, middle_name, last_name) VALUES (?, ?, ?);`;
+  connection.execute(query, [firstName, middleName, lastName]);
+
+
+}
+
 module.exports = {
   readAll,
   readId,
+  isValid,
+  create,
 }
