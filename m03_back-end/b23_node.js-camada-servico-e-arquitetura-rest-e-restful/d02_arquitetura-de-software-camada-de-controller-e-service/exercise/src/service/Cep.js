@@ -26,6 +26,22 @@ const findAdressByCep = async (data) => {
   return cep;
 };
 
+const create = async ({ cep, logradouro, bairro, localidade, uf }) => {
+  const existingCep = await Cep.findAdressByCep(cep);
+
+  if (existingCep) {
+    return {
+      error: {
+        code: 'alreadyExists',
+        message: 'CEP já existe',
+      },
+    };
+  }
+
+  return Cep.create({ cep, logradouro, bairro, localidade, uf });
+};
+
 module.exports = {
   findAdressByCep,
+  create,
 };

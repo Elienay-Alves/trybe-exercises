@@ -8,6 +8,7 @@ const route = express.Router();
 route.use(express.json());
 
 route.get('/:cep', Cep.findAddressByCep);
+route.post('/', Cep.create);
 
 route.use(errorMiddleware);
 

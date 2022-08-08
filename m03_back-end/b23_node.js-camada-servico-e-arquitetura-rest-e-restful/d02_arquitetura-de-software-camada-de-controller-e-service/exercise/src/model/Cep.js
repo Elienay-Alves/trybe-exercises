@@ -30,6 +30,19 @@ const findAdressByCep = async (cepToSearch) => {
   return getNewCep(row);
 };
 
+const create = async ({ cep: rawCep, logradouro, bairro, localidade, uf }) => {
+  const cep = rawCep.replace(/-/ig, '');
+
+  const query = `
+  INSERT INTO ceps (cep, logradouro, bairro, localidade, uf)
+  VALUES (?, ?, ?, ?, ?);`;
+
+  await db.query(query, [cep, logradouro, bairro, localidade, uf]);
+
+  return { cep, logradouro, bairro, localidade, uf };
+};
+
 module.exports = {
   findAdressByCep,
+  create,
 };

@@ -1,4 +1,5 @@
 const rescue = require('express-rescue');
+const Joi = require('joi');
 const Cep = require('../service/Cep');
 
 const findAddressByCep = rescue(async (req, res, next) => {
@@ -13,6 +14,28 @@ const findAddressByCep = rescue(async (req, res, next) => {
   return res.status(200).json(address);
 });
 
+const create = rescue(async (req, res, next) => {
+  const requiredNonEmptyString = Joi.string().not().empty().requred();
+
+  const { error } = Joi.object({
+    cep: Joi.string().regex(/\d{5}-\d{3}/).required(),
+    logradouro: requiredNonEmptyString,
+    localidade: requiredNonEmptyString,
+    uf: requiredNonEmptyString.length(2),
+  }).validate(req.body);
+
+  if (error) return next(error);
+
+  const newCep = await Cep.create(req.body);
+
+  if (newCep.error) {
+    return next(newCep.error);
+  }
+
+  res.status(201).json(newCep);
+});
+
 module.exports = {
   findAddressByCep,
+  create,
 };
