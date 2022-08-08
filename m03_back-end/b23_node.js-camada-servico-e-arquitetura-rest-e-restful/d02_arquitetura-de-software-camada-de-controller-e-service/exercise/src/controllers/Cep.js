@@ -15,13 +15,8 @@ const findAddressByCep = rescue(async (req, res, next) => {
 });
 
 const create = rescue(async (req, res, next) => {
-  const requiredNonEmptyString = Joi.string().not().empty().requred();
-
   const { error } = Joi.object({
     cep: Joi.string().regex(/\d{5}-\d{3}/).required(),
-    logradouro: requiredNonEmptyString,
-    localidade: requiredNonEmptyString,
-    uf: requiredNonEmptyString.length(2),
   }).validate(req.body);
 
   if (error) return next(error);

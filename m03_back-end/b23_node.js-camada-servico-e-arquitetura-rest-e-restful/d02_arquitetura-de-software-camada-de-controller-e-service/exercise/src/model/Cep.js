@@ -1,4 +1,6 @@
+const axios = require('axios');
 const db = require('./db');
+const getDistrictId = require('./District');
 
 // CEP Regex
 const CEP_REGEX = /^\d{5}-\d{3}$/;
@@ -30,16 +32,21 @@ const findAdressByCep = async (cepToSearch) => {
   return getNewCep(row);
 };
 
-const create = async ({ cep: rawCep, logradouro, bairro, localidade, uf }) => {
-  const cep = rawCep.replace(/-/ig, '');
+const create = async (rawCep) => {
+  const cepData = await axios.get(`https://viacep.com.br/ws/${rawCep}/json/`);
 
+  if (!cepData) return null;
+
+  const { logradouro, bairro, localidade, uf } = cepData.data;
+  const cep = rawCep.replace(/-/ig, '');
+  const districtId = await getDistrictId(bairro, localidade, uf);
   const query = `
   INSERT INTO ceps (cep, logradouro, bairro, localidade, uf)
   VALUES (?, ?, ?, ?, ?);`;
 
-  await db.query(query, [cep, logradouro, bairro, localidade, uf]);
+  await db.query(query, [cep, logradouro, districtId]);
 
-  return { cep, logradouro, bairro, localidade, uf };
+  return { cep: rawCep, logradouro, bairro, localidade, uf };
 };
 
 module.exports = {

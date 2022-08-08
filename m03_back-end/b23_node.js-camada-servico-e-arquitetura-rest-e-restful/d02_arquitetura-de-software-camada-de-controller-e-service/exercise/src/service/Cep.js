@@ -40,9 +40,19 @@ const findAdressByCep = async (data) => {
   return Cep.create(cepFromApi);
 };
 
-const create = async ({ cep, logradouro, bairro, localidade, uf }) => {
+const create = async (cep) => {
+  const CEP_REGEX = /\d{5}-?\d{3}/;
+  
+  if (!CEP_REGEX.test(cep)) {
+    return {
+      error: {
+        code: 'invalidData',
+        message: 'CEP inválido',
+      },
+    };
+  }
+  
   const existingCep = await Cep.findAdressByCep(cep);
-
   if (existingCep) {
     return {
       error: {
@@ -52,7 +62,18 @@ const create = async ({ cep, logradouro, bairro, localidade, uf }) => {
     };
   }
 
-  return Cep.create({ cep, logradouro, bairro, localidade, uf });
+  const createdCep = await Cep.create(cep);
+
+  if (!createdCep) {
+    return {
+      error: {
+        code: 'notFound',
+        message: 'CEP não existe',
+      },
+    };
+  }
+
+  return createdCep;
 };
 
 module.exports = {
