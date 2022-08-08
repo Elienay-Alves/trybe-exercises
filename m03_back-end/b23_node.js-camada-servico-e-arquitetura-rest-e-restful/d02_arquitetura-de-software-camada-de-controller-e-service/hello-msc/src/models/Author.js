@@ -48,8 +48,29 @@ const createAuthor = async (firstName, middleName, lastName) => {
   return [getNewAuthor({ id: row.insertId, firstName, middleName, lastName })];
 };
 
+const findByName = async (firstName, middleName, lastName) => {
+  let query = `
+  SELECT id, first_name, middle_name, last_name 
+  FROM model_example.authors
+`;
+
+  if (middleName) {
+    query += 'WHERE first_name = ? AND middle_name = ? AND last_name = ?;';
+  } else {
+  query += 'WHERE first_name = ? AND last_name = ?;';
+  }
+
+  const params = middleName ? [firstName, middleName, lastName] : [firstName, lastName];
+  const [row] = await db.query(query, params);
+
+  if (row.length === 0) return null;
+
+  return serialize(row);
+};
+
 module.exports = {
   getAll,
   findById,
   createAuthor,
+  findByName,
 };

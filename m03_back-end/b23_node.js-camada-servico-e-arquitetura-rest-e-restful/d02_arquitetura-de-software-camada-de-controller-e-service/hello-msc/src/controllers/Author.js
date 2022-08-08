@@ -1,3 +1,4 @@
+const Joi = require('joi');
 const Author = require('../services/Author');
 
 const getAll = async (_req, res) => {
@@ -10,12 +11,12 @@ const getAll = async (_req, res) => {
   }
 };
 
-const findById = async (req, res) => {
+const findById = async (req, res, next) => {
   try {
     const { id } = req.params;
     const row = await Author.getById(id);
     
-    if (!row) return res.status(404).json({ message: 'Not found' });
+    if (Author.error) return next(Author.error);
   
     return res.status(200).json(row);
   } catch (error) {
@@ -23,14 +24,26 @@ const findById = async (req, res) => {
   }
 };
 
-const createAuthor = async (req, res) => {
-  const { first_name, middle_name, last_name } = req.body;
+const createAuthor = async (req, res, next) => {
+  const {
+    first_name: firstName,
+    middle_name: middleName,
+    last_name: lastName } = req.body;
 
-  const row = await Author.createAuthor(first_name, middle_name, last_name);
+  const { error } = Joi.object({
+    firstName: Joi.string().not().empty().required(),
+    lastName: Joi.string().not().empty().required(),
+  }).validate({ firstName, middleName, lastName });
 
-  if (!row) return res.status(400).json({ message: 'Dados inválidos' });
+  if (error) {
+    return next(error);
+  }
 
-  return res.status(201).json({ message: 'Pessoa autora criada com sucesso!' });
+  const row = await Author.createAuthor(firstName, middleName, lastName);
+
+  if (row.error) return next(row.error);
+
+  return res.status(201).json(row);
 };
 
 module.exports = {

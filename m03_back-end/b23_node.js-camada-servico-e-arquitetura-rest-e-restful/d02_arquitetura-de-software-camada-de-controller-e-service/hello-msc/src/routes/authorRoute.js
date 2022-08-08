@@ -1,5 +1,6 @@
 const express = require('express');
-const Author = require('../services/Author');
+// const rescue = require('express-rescue');
+const Author = require('../controllers/Author');
 
 const route = express.Router();
 route.use(express.json());
