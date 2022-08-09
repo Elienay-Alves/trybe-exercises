@@ -28,7 +28,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML Semântico_
-- [ ] 3-5: <a href="http://example.com/" target="_blank">Hello, world!</a>
+- [ ] 3-5: <a href="[http://example.com/](https://github.com/Elienay-Alves/Project-Lessons-Learned)" target="_blank">Projeto - Lessons Learned</a>
 
 ##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
