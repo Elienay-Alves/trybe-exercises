@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     pageQuantity: DataTypes.INTEGER,
     createdAt: DataTypes.DATE,
     updatedAt: DataTypes.DATE,
+    publisher: DataTypes.STRING,
   });
 
   return Book;
