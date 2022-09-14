@@ -15,3 +15,7 @@ console.log(`Quadrado de lado 100cm: ${Exercise.square(100)}cm²`);
 console.log(`Retângulo de base 10cm e altura 25cm: ${Exercise.rectangle(10, 25)}cm²`);
 console.log(`Retângulo de base 5cm e altura 30cm: ${Exercise.rectangle(5, 30)}cm²`);
 console.log(`Retângulo de base 100cm e altura 200cm: ${Exercise.rectangle(100, 200)}cm²`);
+
+console.log(`Losango  de diagonal maior 32cm e diagonal menor 18cm: ${Exercise.diamond(32, 25)}`);
+
+
