@@ -9,13 +9,13 @@ enum WeekDays {
 }
 
 enum RainbowColors {
-  firstColor = 'red',
-  secondColor = 'orange',
-  thirdColor = 'yellow',
-  fourthColor = 'green',
-  fifthColor = 'blue',
-  sixthColor = 'indigo',
-  seventhColor = 'violet',
+  firstColor = 'vermelho',
+  secondColor = 'laranja',
+  thirdColor = 'amarelo',
+  fourthColor = 'verde',
+  fifthColor = 'azul',
+  sixthColor = 'azul escuro',
+  seventhColor = 'violeta',
 }
 
 enum Printer {
