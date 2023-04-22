@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+TypeSrypt
+Python
+JavaScript
+MongoDB
+Java
