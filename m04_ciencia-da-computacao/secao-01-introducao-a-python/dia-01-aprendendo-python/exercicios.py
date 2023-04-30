@@ -2,11 +2,9 @@
 def greater_number(a, b):
     if a > b:
         print(a)
-    if b > a:
-        print(b)
 
 
-greater_number(4, 5)
+print(greater_number(4, 5))
 
 
 # Exercício 2: Calcule a média aritmética dos valores contidos em uma lista.
