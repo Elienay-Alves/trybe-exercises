@@ -9,4 +9,3 @@ with open("notas.txt", encoding="utf-8") as file:
 
 with open("reprovados.txt", mode="w", encoding="utf-8") as final_file:
     final_file.writelines(ALUNOS_RECUPERACAO)
-    final_file.close()
