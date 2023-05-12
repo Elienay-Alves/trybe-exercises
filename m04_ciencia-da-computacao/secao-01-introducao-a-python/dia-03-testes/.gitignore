@@ -1,1 +1,5 @@
 .venv
+.vscode
+.reqs.txt
+src/__pycache__/
+tests/__pycache__/
