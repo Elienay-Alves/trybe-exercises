@@ -12,7 +12,8 @@ def list_returner(n: type[int]) -> list[int]:
             else:
                 result.append(number)
         return result
-    except TypeError:
-        raise TypeError("Tipo inválido")
+    except TypeError as esc:
+        raise TypeError("Tipo inválido") from esc
+
 
 list_returner(0)
