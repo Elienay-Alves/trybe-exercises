@@ -32,7 +32,7 @@ def word_decriptter(word: str) -> dict[str, int]:
     upper_word = word.upper()
 
     if not 1 < len(upper_word) < 30:
-        raise ValueError
+        raise ValueError("Expected length to be between 1 and 30")
 
     number = ""
     for letter in upper_word:
@@ -56,9 +56,9 @@ def word_decriptter(word: str) -> dict[str, int]:
             number += letter
         else:
             raise ValueError("Invalid Character")
-    print(number)
+    return number
 
 
 if __name__ == "__main__":
     list_returner(0)
-    word_decriptter("1-home-sweet-home")
+    word_decriptter("as !")
