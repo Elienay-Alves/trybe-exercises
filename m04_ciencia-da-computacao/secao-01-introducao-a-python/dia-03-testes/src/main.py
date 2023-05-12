@@ -16,18 +16,6 @@ def list_returner(n: type[int]) -> list[int]:
         raise TypeError("Tipo inválido") from esc
 
 
-WORDS_MEANING = {
-    "ABC": 2,
-    "DEF": 3,
-    "GHI": 4,
-    "JKL": 5,
-    "MNO": 6,
-    "PQRS": 7,
-    "TUV": 8,
-    "WXYZ": 9,
-}
-
-
 def word_decriptter(word: str) -> dict[str, int]:
     upper_word = word.upper()
 
@@ -57,6 +45,10 @@ def word_decriptter(word: str) -> dict[str, int]:
         else:
             raise ValueError("Invalid Character")
     return number
+
+
+def email_verifier(email: str) -> None:
+    ...
 
 
 if __name__ == "__main__":
