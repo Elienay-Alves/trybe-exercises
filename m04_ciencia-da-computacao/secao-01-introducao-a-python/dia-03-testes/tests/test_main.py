@@ -45,3 +45,7 @@ def test_list_returner_if_no_int_type():
         pass
     else:
         raise AssertionError
+
+
+def test_i():
+    ...
