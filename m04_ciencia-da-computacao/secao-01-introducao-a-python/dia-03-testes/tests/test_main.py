@@ -1,4 +1,4 @@
-from src.main import list_returner
+from exercise_1 import list_returner
 
 
 def test_list_with_number_by_three():
