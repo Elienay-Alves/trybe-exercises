@@ -1,4 +1,4 @@
-from exercise_1 import word_decriptter
+from src.exercise_2 import word_decriptter
 import pytest
 
 
