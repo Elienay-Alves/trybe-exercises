@@ -1,7 +1,11 @@
-from exercise_1 import list_returner
+"""Test the exercice 1 function"""
+
+from src.exercise_1 import list_returner
 
 
 def test_list_with_number_by_three():
+    """asset that when the number is divisible by three it will be the right
+    result"""
     assert list_returner(3) == [1, 2, "Fizz"]
 
 
