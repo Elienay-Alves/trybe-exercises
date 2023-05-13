@@ -48,9 +48,25 @@ def word_decriptter(word: str) -> dict[str, int]:
 
 
 def email_verifier(email: str) -> None:
-    ...
+    username = email.split("@")[0]
+    website_name = email.split("@")[1].split(".")[0]
+    extention = email.split(".")[1]
+    dot = ""
+    at = ""
+
+    if not username.isalpha():
+        raise TypeError("username cannot be have number")
+
+    for char in email:
+        if char == "@":
+            at += char
+        elif char == ".":
+            dot += char
+
+    print(username, at, website_name, dot, extention)
 
 
 if __name__ == "__main__":
     list_returner(0)
-    word_decriptter("as !")
+    word_decriptter("ghisa")
+    email_verifier("nome_suario@nomewebsite.extensao")

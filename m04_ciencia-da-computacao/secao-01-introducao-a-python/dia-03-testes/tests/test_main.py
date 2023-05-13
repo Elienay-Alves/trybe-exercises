@@ -1,5 +1,4 @@
-from src.main import list_returner, word_decriptter
-import pytest
+from src.main import list_returner
 
 
 def test_list_with_number_by_three():
