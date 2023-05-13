@@ -1,17 +1,38 @@
 def email_verifier(email: str) -> None:
-    username = email.split("@")[0]
-    website_name = email.split("@")[1].split(".")[0]
-    extention = email.split(".")[1]
-    dot = ""
-    at = ""
+    index = 0
 
-    if not username.isalpha():
-        raise TypeError("username cannot be have number")
+    if not email[index].isalpha():
+        raise ValueError("Username need to start with a letter")
 
-    for char in email:
-        if char == "@":
-            at += char
-        elif char == ".":
-            dot += char
+    while email[index] != "@" and index < len(email):
+        if (
+            not email[index].isalpha()
+            and not email[index].isdigit()
+            and email[index] not in ("_", "-")
+        ):
+            raise ValueError(
+                """
+            Username need contains only letters,
+            digits, dashes or underscore
+            """
+            )
+        index += 1
+    index += 1
 
-    print(username, at, website_name, dot, extention)
+    while email[index] != "." and index < len(email):
+        if not email[index].isalpha() and not email[index].isdigit():
+            raise ValueError(
+                "Website should contains only letters, and digits"
+            )
+        index += 1
+    index += 1
+
+    counter = 0
+    while index < len(email):
+        counter += 1
+        index += 1
+
+    if counter > 3:
+        raise ValueError("Extension maximum length is 3")
+
+    return None
