@@ -1,4 +1,10 @@
+"""Sua tarefa é ler uma expressão e encontrar o número de telefone
+correspondente"""
+
+
 def word_decriptter(word: str) -> dict[str, int]:
+    """Recebe uma expressão e retorna um número telefonico baseado na mesma
+    expressão"""
     upper_word = word.upper()
 
     if not 1 < len(upper_word) < 30:
@@ -27,3 +33,7 @@ def word_decriptter(word: str) -> dict[str, int]:
         else:
             raise ValueError("Invalid Character")
     return number
+
+
+if __name__ == "__main__":
+    word_decriptter("1-home-sweet-home")
