@@ -1,38 +1,14 @@
-def list_returner(n: type[int]) -> list[int]:
-    result = []
-    try:
-        for number in range(1, n + 1):
-            if number % 3 == 0 and number % 5 == 0:
-                result.append("FizzBuzz")
-            elif number % 3 == 0:
-                result.append("Fizz")
-            elif number % 5 == 0:
-                result.append("Buzz")
-
-            else:
-                result.append(number)
-        return result
-    except TypeError as esc:
-        raise TypeError("Tipo inválido") from esc
-
-
-WORDS_MEANING = {
-    "ABC": 2,
-    "DEF": 3,
-    "GHI": 4,
-    "JKL": 5,
-    "MNO": 6,
-    "PQRS": 7,
-    "TUV": 8,
-    "WXYZ": 9,
-}
+"""Sua tarefa é ler uma expressão e encontrar o número de telefone
+correspondente"""
 
 
 def word_decriptter(word: str) -> dict[str, int]:
+    """Recebe uma expressão e retorna um número telefonico baseado na mesma
+    expressão"""
     upper_word = word.upper()
 
     if not 1 < len(upper_word) < 30:
-        raise ValueError
+        raise ValueError("Expected length to be between 1 and 30")
 
     number = ""
     for letter in upper_word:
@@ -56,9 +32,8 @@ def word_decriptter(word: str) -> dict[str, int]:
             number += letter
         else:
             raise ValueError("Invalid Character")
-    print(number)
+    return number
 
 
 if __name__ == "__main__":
-    list_returner(0)
     word_decriptter("1-home-sweet-home")
