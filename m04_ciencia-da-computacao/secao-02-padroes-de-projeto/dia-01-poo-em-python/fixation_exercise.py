@@ -69,8 +69,12 @@ if __name__ == "__main__":
 
     print(f"I have a fan and payed US${fan.price} for it!")
     print(
-        f"I had to buy a {dryer.color} dryer and brought one of {dryer._voltage} voltage by mistake!"
+        f"""
+        I had to buy a {dryer.color} dryer and brought
+        one of {dryer._voltage} voltage by mistake!"""
     )
     print(
-        f"That {w_machine.color} it's so expensive. She payed {w_machine.price} for that, right?"
+        f"""
+        That {w_machine.color} it's so expensive.
+        She payed {w_machine.price} for that, right?"""
     )
