@@ -1,4 +1,4 @@
-class Home_appliances:
+class HomeAppliances:
     def __init__(
         self, color: str, power: int, voltage: int, price: int
     ) -> None:
@@ -44,19 +44,20 @@ class Person:
         self.fan = None
 
 
-class Fan(Home_appliances):
+class Fan(HomeAppliances):
     pass
 
 
-class Dryer(Home_appliances):
+class Dryer(HomeAppliances):
     pass
 
 
-class Mixer(Home_appliances):
-    pass
+class Mixer(HomeAppliances):
+    def its_on(self) -> str:
+        return "Yes" if super().its_on() else "No"
 
 
-class Washing_machine(Home_appliances):
+class WashingMachine(HomeAppliances):
     pass
 
 
@@ -65,7 +66,7 @@ if __name__ == "__main__":
     # person.buy_a_fan(white_fan)
     fan = Fan("white", power=250, voltage=220, price=100)
     dryer = Dryer("red", power=220, voltage=110, price=370)
-    w_machine = Washing_machine("grey", power=250, voltage=220, price=500)
+    w_machine = WashingMachine("grey", power=250, voltage=220, price=500)
 
     print(f"I have a fan and payed US${fan.price} for it!")
     print(
@@ -78,3 +79,5 @@ if __name__ == "__main__":
         That {w_machine.color} it's so expensive.
         She payed {w_machine.price} for that, right?"""
     )
+
+    print(f"the fans is {fan.its_on}")
