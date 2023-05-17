@@ -1,19 +1,19 @@
-# Trybe - Conteúdo
+# Trybe - Course Content
 
-Neste repositório constam todas as atividades de aprendizagem desenvolvidas por mim _[Elienay Alves](https://www.linkedin.com/in/elienayalves/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+This repository contains all the activities developed by me _[Elienay Alves](https://www.linkedin.com/in/elienayalves/)_ while studing at [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde uma das possibilidades de pagamento é quando a pessoa conseguir um emprego na área de tecnologia."_
+_"Trybe is a school of the future for anyone who wants to improve their lives and build a successful career in technology, where one of the payment possibilities is when the person gets a job in the technology field."_
 
-O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
+The program has more than 1.500 hours of online classes, covering Introduction to Software Development, Front-End, Back-End, Computer Science, Software Engineering, Agile Methodologies and Behavioral Skills.
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
 ##### [Bloco 1: Introdução - Unix & Bash](https://github.com/Elienay-Alves/trybe-exercicios/tree/main/m01_fundamentos/b01_unix-e-bash)
 
-- [X] 1-3: _Fundamentos do Desenvolvimento Web_
-- [X] 1-3: _Introdução - Unix & Shell_
-- [X] 1-3: _Unix & Bash - Part 1_
-- [X] 1-4: _Unix & Bash - Part 2_
+- [X] Day 3: _Fundamentos do Desenvolvimento Web_
+- [X] Day 3: _Introdução - Unix & Shell_
+- [X] Day 3: _Unix & Bash - Part 1_
+- [X] Day 4: _Unix & Bash - Part 2_
 
 ##### [Bloco 2: Git, GitHub e Internet](https://github.com/Elienay-Alves/trybe-exercicios/tree/master/m01_fundamentos/b02_git-github-e-internet)
 
