@@ -1,19 +1,19 @@
-# Trybe - Conteúdo
+# Trybe - Course Content
 
-Neste repositório constam todas as atividades de aprendizagem desenvolvidas por mim _[Elienay Alves](https://www.linkedin.com/in/elienayalves/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+This repository contains all the activities developed by me _[Elienay Alves](https://www.linkedin.com/in/elienayalves/)_ while studing at [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde uma das possibilidades de pagamento é quando a pessoa conseguir um emprego na área de tecnologia."_
+_"Trybe is a school of the future for anyone who wants to improve their lives and build a successful career in technology, where one of the payment possibilities is when the person gets a job in the technology field."_
 
-O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
+The program has more than 1.500 hours of online classes, covering Introduction to Software Development, Front-End, Back-End, Computer Science, Software Engineering, Agile Methodologies and Behavioral Skills.
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
 ##### [Bloco 1: Introdução - Unix & Bash](https://github.com/Elienay-Alves/trybe-exercicios/tree/main/m01_fundamentos/b01_unix-e-bash)
 
-- [X] 1-3: _Fundamentos do Desenvolvimento Web_
-- [X] 1-3: _Introdução - Unix & Shell_
-- [X] 1-3: _Unix & Bash - Part 1_
-- [X] 1-4: _Unix & Bash - Part 2_
+- [X] Day 3: _Fundamentos do Desenvolvimento Web_
+- [X] Day 3: _Introdução - Unix & Shell_
+- [X] Day 3: _Unix & Bash - Part 1_
+- [X] Day 4: _Unix & Bash - Part 2_
 
 ##### [Bloco 2: Git, GitHub e Internet](https://github.com/Elienay-Alves/trybe-exercicios/tree/master/m01_fundamentos/b02_git-github-e-internet)
 
@@ -244,48 +244,48 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [ ] 31-1: _[Projeto - App de Delivery]()_
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Computer Science :hourglass_flowing_sand:
 
-##### Bloco 32: Introdução à Python
+##### Section 1: Introduction to Python
 
-- [ ] 32-1: _Introdução - Ciência da Computação_
-- [ ] 32-1: _Aprendendo Python_
-- [ ] 32-2: _Entrada e saída de dados_
-- [ ] 32-3: _Testes_
-- [ ] 32-4: _[Projeto - Job Insights]()_
+- [x] Day 1: _Learning Python_
+- [x] Day 2: _Data input and output_
+- [x] Day 3: _Tests_
+- [x] Day 4: _[Job Insights Project]()_
 
-##### Bloco 33: Programação orientada à objetos e padrões de projeto
+##### Section 2: Design Patterns
 
-- [ ] 33-1: _Introdução à programação orientada a objetos_
-- [ ] 33-2: _Herança, Composição e Interfaces_
-- [ ] 33-3: _Padrões de projeto_
-- [ ] 33-4: _[Projeto - Relatórios de Estoque]()_
+- [x] Day 1: _O.O.P in Python_
+- [ ] Day 2: _Patterns - Iterator, Adapter, Strategy_
+- [ ] Day 3: _Patterns - Decorator, Observer, Factory_
+- [ ] Day 4: _[Stock Reports Project]()_
 
-##### Bloco 34: Redes e Raspagem de Dados
+##### Section 3: Data Scraping
 
-- [ ] 34-1: _Arquitetura de redes_
-- [ ] 34-2: _Redes de computadores, ferramentas e segurança_
-- [ ] 34-3: _Raspagem de Dados_
-- [ ] 34-4: _[Projeto - Tech News]()_
+- [ ] Day 1: _Data Scraping_
+- [ ] Day 2: _Other Data Scraping Tools_
+- [ ] Day 3: _Activities Day - Crawlers + OOP_
+- [ ] Day 4: _[Tech News Project]()_
 
-##### Bloco 35: Algoritmos
+##### Section 4: Algorithms
 
-- [ ] 35-1: _Complexidade de Algoritmos_
-- [ ] 35-2: _Recursividade e estratégias para solução de problemas_
-- [ ] 35-3: _Algoritmos de ordenação e busca_
-- [ ] 35-4: _[Projeto - Algoritmos]()_
+- [ ] Day 1: _Complexity of Algorithms_
+- [ ] Day 2: _Recursion and problem solving strategies_
+- [ ] Day 3: _Sorting and Searching Algorithms_
+- [ ] Day 4: _[Algorithms Project]()_
 
-##### Bloco 36: Estrutura de Dados I: Arrays, Hashmaps e Sets
+##### Section 5: Data Structure I: Arrays, Lists, Queues and Stack
 
-- [ ] 36-1: _Arquitetura de Computadores_
-- [ ] 36-2: _Arrays_
-- [ ] 36-3: _Hashmaps e Dict_
-- [ ] 36-4: _Set_
-- [ ] 36-5: _[Projeto - Restaurant Orders]()_
+- [ ] Day 1: _Computer Architecture_
+- [ ] Day 2: _Network Architecture_
+- [ ] Day 3: _Arrays_
+- [ ] Day 4: _Node and Linked Lists_
+- [ ] Day 5: _Stacks and Queues_
+- [ ] Day 6: _[TING Project (Trybe is not Google)]()_
 
-##### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
+##### Section 6: Data Structure II: Hashmaps and Sets
 
-- [ ] 37-1: _Nó e Listas Encadeadas_
-- [ ] 37-2: _Deque_
-- [ ] 37-3: _Pilhas_
-- [ ] 37-4: _[Projeto - TING (Trybe Is Not Google)]()_
+- [ ] 37-1: _Hashmap and Dict_
+- [ ] 37-2: _Set_
+- [ ] 37-3: _Pandas_
+- [ ] 37-4: _[Restaurant Orders Project]()_

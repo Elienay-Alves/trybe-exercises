@@ -1,49 +1,32 @@
-"""Cria a classe TV"""
+"""Create TV class"""
 
 
 class Tv:
-    """Cria a classe abstrata TV"""
+    """Create the abstract class TV"""
 
-    def __init__(self, tamanho: int) -> None:
+    def __init__(self, size: int) -> None:
         self.__volume = 50
-        self.__canal = 1
-        self.__tamanho = tamanho
-        self.__ligada = False
+        self.__channel = 1
+        self.__size = size
+        self.__on = False
 
-    @property
-    def volume(self) -> int:
-        """Pega o atributo privado volume para manipula-lo"""
-        return self.__volume
+    def increase_volume(self) -> None:
+        """Increase the TV volume"""
+        if self.__volume < 99:
+            self.__volume += 1
 
-    def modifica_volume(self, volume: int) -> int:
-        """Modifica volume de acordo com parametro passado"""
-        if not 0 < volume <= 99:
-            raise ValueError("Volume must be between 0 and 99!")
-        self.__volume = volume
-        return volume
+    def decrease_volume(self) -> None:
+        """Decrease the TV volume"""
+        if self.__volume > 0:
+            self.__volume -= 1
 
-    @property
-    def canal(self) -> int:
-        """Pega o atributo privado canal para manipula-lo"""
-        return self.__canal
+    def change_channel(self, channel: int) -> None:
+        """Change the channel if it's between 1 and 99"""
+        if channel <= 1 or channel >= 99:
+            raise ValueError("Unavailable Channel")
 
-    def modificar_canal(self, canal: int) -> int:
-        """Modifica canal de acordo com parametro passado"""
-        if not 1 < canal < 99:
-            raise ValueError("Canal precisa estar entre 1 e 99!")
-        self.__canal = canal
+        self.__channel = channel
 
-    @property
-    def ligada(self) -> bool:
-        """Pega o atributo privado ligada para manipula-lo"""
-        return self.__ligada
-
-    def ligar_desligar(self, ligada) -> None:
-        if not ligada:
-            self.__ligada = True
-        self.__ligada = False
-
-
-VOLUME = Tv.modifica_volume(Tv, 67)
-
-print(VOLUME)
+    def on_off(self) -> None:
+        """turn the TV on or off"""
+        self.__on = not self.__on
