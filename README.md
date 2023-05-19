@@ -257,8 +257,8 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 
 - [x] Day 1: _O.O.P in Python_
 - [x] Day 2: _Patterns - Iterator, Adapter, Strategy_
-- [ ] Day 3: _Patterns - Decorator, Observer, Factory_
-- [ ] Day 4: _[Stock Reports Project]()_
+- [x] Day 3: _Patterns - Decorator, Observer, Factory_
+- [x] Day 4: _[Stock Reports Project]()_
 
 ##### Section 3: Data Scraping
 
