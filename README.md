@@ -264,7 +264,7 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 
 - [x] Day 1: _Data Scraping_
 - [x] Day 2: _Other Data Scraping Tools_
-- [ ] Day 3: _Activities Day - Crawlers + OOP_
+- [x] Day 3: _Activities Day - Crawlers + OOP_
 - [ ] Day 4: _[Tech News Project]()_
 
 ##### Section 4: Algorithms
