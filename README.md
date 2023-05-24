@@ -270,7 +270,7 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 ##### Section 4: Algorithms
 
 - [x] Day 1: _Complexity of Algorithms_
-- [ ] Day 2: _Recursion and problem solving strategies_
+- [x] Day 2: _Recursion and problem solving strategies_
 - [ ] Day 3: _Sorting and Searching Algorithms_
 - [ ] Day 4: _[Algorithms Project]()_
 
