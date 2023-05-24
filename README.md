@@ -271,8 +271,8 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 
 - [x] Day 1: _Complexity of Algorithms_
 - [x] Day 2: _Recursion and problem solving strategies_
-- [ ] Day 3: _Sorting and Searching Algorithms_
-- [ ] Day 4: _[Algorithms Project]()_
+- [x] Day 3: _Sorting and Searching Algorithms_
+- [x] Day 4: _[Algorithms Project]()_
 
 ##### Section 5: Data Structure I: Arrays, Lists, Queues and Stack
 
