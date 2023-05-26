@@ -277,7 +277,7 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 ##### Section 5: Data Structure I: Arrays, Lists, Queues and Stack
 
 - [x] Day 1: _Computer Architecture_
-- [ ] Day 2: _Network Architecture_
+- [x] Day 2: _Network Architecture_
 - [ ] Day 3: _Arrays_
 - [ ] Day 4: _Node and Linked Lists_
 - [ ] Day 5: _Stacks and Queues_
