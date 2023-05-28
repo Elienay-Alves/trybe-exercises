@@ -279,7 +279,7 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 - [x] Day 1: _Computer Architecture_
 - [x] Day 2: _Network Architecture_
 - [x] Day 3: _Arrays_
-- [ ] Day 4: _Node and Linked Lists_
+- [x] Day 4: _Node and Linked Lists_
 - [ ] Day 5: _Stacks and Queues_
 - [ ] Day 6: _[TING Project (Trybe is not Google)]()_
 
