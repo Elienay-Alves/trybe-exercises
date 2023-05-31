@@ -280,8 +280,8 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 - [x] Day 2: _Network Architecture_
 - [x] Day 3: _Arrays_
 - [x] Day 4: _Node and Linked Lists_
-- [ ] Day 5: _Stacks and Queues_
-- [ ] Day 6: _[TING Project (Trybe is not Google)]()_
+- [x] Day 5: _Stacks and Queues_
+- [x] Day 6: _[TING Project (Trybe is not Google)]()_
 
 ##### Section 6: Data Structure II: Hashmaps and Sets
 
