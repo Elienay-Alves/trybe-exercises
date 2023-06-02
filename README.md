@@ -288,4 +288,4 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 - [x] Day 1: _Hashmap and Dict_
 - [x] Day 2: _Set_
 - [ ] Day 3: _Pandas_
-- [ ] Day 4: _[Restaurant Orders Project]()_
+- [x] Day 4: _[Restaurant Orders Project]()_
