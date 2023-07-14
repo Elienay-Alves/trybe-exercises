@@ -142,107 +142,80 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 
 - [ ] 18-1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Back-end Development :hourglass_flowing_sand:
 
-##### Bloco 19: Docker: Utilizando Containers
+##### Section 1: Docker: Using Containers
 
-- [X] 19-1: _Introdução - Back-end_
-- [X] 19-1: _Utilizando Containers - Docker_
-- [X] 19-2: _Manipulação e Criação de Imagens no Docker_
-- [X] 19-3: _Orquestrando Containers com Docker Compose_
-- [X] 19-5: _[Projeto - Docker Todo-List]()_
+- [X] Day 1: _Using Containers - Docker_
+- [X] Day 2: _Manipulating Images in Docker_
+- [X] Day 3: _Orchestrating Containers with Docker Compose_
+- [X] Day 5: _[Docker Todo-List Project]()_
 
-##### Bloco 20: Funções SQL, Joins e Subqueries
+##### Section 2: Introduction to SQL
 
-- [X] 20-1: _Introdução - Banco de Dados Relacionais_
-- [X] 20-1: _Banco de Dados Dados SQL_
-- [X] 20-2: _Encontrando dados em um Banco de Dados_
-- [X] 20-3: _Filtrando Dados de Forma Específica_
-- [x] 20-4 _Manipulando Tabelas_
-- [x] 20-4: _[Projeto - All for One]()_
+- [X] Day 1: _SQL Database_
+- [X] Day 2: _Finding Data in a Database_
+- [X] Day 3: _Filtering Data Specifically_
+- [x] Day 4: _Manipulating Tables_
+- [x] Day 5: _[All for One Project]()_
 
-##### Bloco 21: Normalização e Modelagem de banco de dados
+##### Section 3: SQL Functions, JOINs and Normalization
 
-- [X] 21-1: _Funções mais usadas no SQL_
-- [X] 21-2: _Descomplicando JOINs_
-- [X] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [X] 21-4: _Aula ao vivo + [Projeto - One For All]()_
+- [X] Day 1: _Most used functions in SQL_
+- [X] Day 2: _Making JOINs uncomplicated_
+- [X] Day 3: _Transforming ideas into a database model_
+- [X] Day 4: _[One For All Project]()_
 
-##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
+##### Section 4: Introduction to web development with Node.js
 
-- [X] 22-1: _Intro - Node.js_
-- [X] 22-1: _Node.js - Um morot JavaScript_
-- [X] 22-2: _Node.js - Fluxo Assíncrono_
-- [X] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [X] 22-4: _Express - HTTP com Node.js_
-- [X] 22.5: _Express - Middlewares_
-- [X] 22-6: _Atividades + [Projeto - Talker Manager]()_
+- [X] Day 1: _Node.js: Asynchronous Runtime_
+- [X] Day 2: _Node.js: REST API with Express_
+- [X] Day 3: _Node.js: Integration Tests_
+- [X] Day 4: _Node.js: Express and Middleware_
+- [X] Day 5: _Node.js: Express and MySQL_
+- [X] Day 6: _[Talker Manager Project]()_
 
-##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
+##### Section 5: Software Architecture: Model, Service and Controller
 
-- [X] 23-1: _Arquitetura de Software_
-- [X] 23-1: _Arquitetura de Software - Camada de Model_
-- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 23-3: _Arquitetura Web - Rest e Restful_
-- [ ] 23-4: _Arquitetura de Software - Testando Camadas_
-- [ ] 23-5: _[Projeto - Store Manager]()_
+- [X] Day 1: _Software Architecture: Model Layer_
+- [X] Day 2: _Software Architecture: Refactoring Model Layer_
+- [ ] Day 3: _Software Architecture: Service Layer_
+- [ ] Day 4: _Software Architecture: Refactoring Service Layer_
+- [ ] Day 5: _Software Architecture: Refactoring Controller Layer_
+- [ ] Day 6: _[Store Manager Project]()_
 
-##### Bloco 24: MongoDB: Aggregation Framework
+##### Section 6: ORM and Authentication
 
-- [ ] 24-1: _Aggregation Framework - Part 1_
-- [ ] 24-2: _Aggregation Framework - Part 2_
-- [ ] 24-3: _[Projeto - Aggregations]()_
+- [ ] Day 1: _ORM - Interface of the application with the database_
+- [ ] Day 2: _ORM - Associations 1:1 and 1:N_
+- [ ] Day 3: _ORM - N:N Associations and Transactions_
+- [ ] Day 4: _JWT - (JSON Web Token)_
+- [ ] Day 5: _[Blog API Project]()_
 
-##### Bloco 25: Introdução ao Desenvolvimento Web com NodeJS
+##### Section 7: Deployment of Applications in the Cloud
 
-- [ ] 25-1: _Introdução NodeJs_
-- [ ] 25-2: _Fluxo Assíncrono - NodeJS_
-- [ ] 25-3: _Testes com NodeJS_
-- [ ] 25-4: _Express: HTTP com NodeJS_
-- [ ] 25-5: _Express: Middlewares_
-- [ ] 25-6: _[Projeto - Talker Manager]()_
+- [ ] Day 1: _Infrastructure: Deploy with Railway_
 
-##### Bloco 26: NodeJS: Camada de serviço e arquitetura Rest e Restful
+##### Section 8: Introduction to TypeScript
 
-- [ ] 26-1: _Arquitetura de Software_
-- [ ] 26-1: _Arquitetura de Software - Camada de Model_
-- [ ] 26-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 26-3: _Arquitetura Web - Rest e Restful_
-- [ ] 26-4: _Arquitetura de Software - Testando Camadas_
-- [ ] 26-5: _[Projeto - Store Manager]()_
+- [ ] Day 1: _Learning TypeScript_
+- [ ] Day 2: _Introduction to Generics_
+- [ ] Day 3: _REST API with Express, JWT, Sequelize and TypeScript_
+- [ ] Day 4: _Testing Applications with TypeScript_
+- [ ] Day 5: _[TrybeSmith Project]()_
 
-##### Bloco 27: Autenticação e Upload de arquivos
+##### Section 9: Object Oriented Programming (OOP) and SOLID
 
-- [ ] 27-1: _NodeJS - JWT (JSON Web Token)_
-- [ ] 27-2: _NodeJS - Upload de arquivos com `multer`_
-- [ ] 27-3: _NodeJS - Testando APIs com testes de integração_
-- [ ] 27-4: _[Projeto - Cookmaster]()_
+- [ ] Day 1: _NIntroduction to Object Orientation_
+- [ ] Day 2: _Inheritance and Composition_
+- [ ] Day 3: _Polymorphism_
+- [ ] Day 4: _SOLID - Introduction and Principles S, O and D_
+- [ ] Day 5: _Principles L and I_
+- [ ] Day 6: _[Trybers and Dragons Project]()_
 
-##### Bloco 28: Deployment
-
-- [ ] 28-1: _Introdução - Deploy_
-- [ ] 28-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 28-2: _Deploy - Gerenciadores de processos_
-- [ ] 28-3: _[Projeto - Stranger Things]()_
-
-##### Bloco 29: Arquitetura: SOLID e ORM
-
-- [ ] 29-1: _Arquitetura - Princípios SOLID_
-- [ ] 29-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 29-3: _ORM - Associations_
-- [ ] 29-4: _[Projeto - API de Blogs]()_
-
-##### Bloco 30: Sockets
-
-- [ ] 30-1: _Arquitetura de Software - Camada de View_
-- [ ] 30-2: _Sockets - TCP/UDP & NET_
-- [ ] 30-3: _Sockets - Socket.io_
-- [ ] 30-4: _Sockets - Praticando Socket.io_
-- [ ] 30-5: _[Projeto - Webchat]()_
-
-##### Bloco 31: Projeto - App de Delivery
-
-- [ ] 31-1: _[Projeto - App de Delivery]()_
+##### Section 10: TFC - Trybe Futebol Clube Project
+- [ ] Day 1: _Express with Classes_
+- [ ] Day 2: _[TFC - Trybe Futebol Clube Project]()_
 
 ## Computer Science :hourglass_flowing_sand:
 
@@ -287,5 +260,5 @@ The program has more than 1.500 hours of online classes, covering Introduction t
 
 - [x] Day 1: _Hashmap and Dict_
 - [x] Day 2: _Set_
-- [ ] Day 3: _Pandas_
+- [x] Day 3: _Pandas_
 - [x] Day 4: _[Restaurant Orders Project]()_
